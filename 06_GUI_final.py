@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Calculator")
-#root.geometry("1024x768")
+#root.geometry('800x600')
 
 curMathOperator = ""
 curNumberValue = 0
@@ -14,6 +14,7 @@ frame.pack(side=LEFT)
 
 label = Label(frame, text=str(curNumberValue), justify=RIGHT, font=("Arial", 25), width=14, bd=2, relief="sunken", anchor="e")
 label.grid(row=0, column=0, columnspan=4, pady=6)
+#label.place(x=400, y=300, anchor="center")
 
 def clear():
     global curMathOperator
@@ -22,7 +23,7 @@ def clear():
     curMathOperator = ""
     curNumberValue = 0
     lastNumberCaptured = False
-    label.config(text=str(curNumberValue))
+    label.config(text = "0")
 
 def doMath():
     global mathDone
