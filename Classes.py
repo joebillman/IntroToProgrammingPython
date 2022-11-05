@@ -18,3 +18,12 @@ class Team:
 
     def getTotalMemberCount(self):
         return len(self.members)
+
+class Player:
+    firstName = ""
+    lastName = ""
+    position = ""
+    number = 00
+
+    def getFullName(self):
+        return f"{self.firstName} {self.lastName}"
